@@ -343,6 +343,7 @@ template {
 
 * {
 	box-sizing: border-box;
+	
 }
 
 img {
@@ -402,3 +403,34 @@ body{
 	margin-top: -60px;
 	z-index: 2;
 }
+
+.panel__container{
+		padding: 60px;
+	}
+
+.panel__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+.panel__title {
+		font-size: 89px;
+		color: rgb(23,5,198);
+		font-family: "Source Sans Pro";
+		font-weight: 800;
+		margin: 0;
+		}
+
+.panel__more{
+		display: flex;
+		flex-direction: row;
+	}
+
+.panel__more__circle {
+			margin-left: 3px;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: rgb(23,5,198);
+		}

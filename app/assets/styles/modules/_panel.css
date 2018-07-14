@@ -7,4 +7,33 @@
 	background-color: #ffffff;
 	margin-top: -60px;
 	z-index: 2;
+	
+	&__container{
+		padding: 60px;
+	}
+	
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	&__title {
+		font-size: 89px;
+		color: rgb(23,5,198);
+		font-family: "Source Sans Pro";
+		font-weight: 800;
+		margin: 0;
+		}
+	&__more{
+		display: flex;
+		flex-direction: row;
+		&__circle {
+			margin-left: 3px;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: $main;
+		}
+	}
 }
