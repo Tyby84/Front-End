@@ -5,25 +5,38 @@
 	&__img {
 		width: 750px;
 		height: 500px;
+		
 	}
 	&__arrow {
-		display: inline-block;
+			display: inline-block;
 			font-size: 49px;
-			
 			color: #fff;
+			
+		/*&__img:hover {
+			cursor: pointer;
+			color: $main;
+		}*/
 	}
+	
 	&__navigation{
 		position: absolute;
 		top: 80px;
 		left: 20px;
 		display: flex;
 		flex-direction: row;
+		
+		
+		&:hover .hero__navigation__back{
+			margin-left: -3px;
+			
+		}
 		&__back {
 			font-size: 33px;
 			color: rgb(255,255,255);
-			margin-top: 5px;
+			margin-top: 6px;
 			margin-left: 3px;
+			transition: all .6s ease-out;
 			}
+		
 	}
 }
-

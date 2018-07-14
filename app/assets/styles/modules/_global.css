@@ -13,3 +13,6 @@ body{
 	width: 750px;
 	margin: 0 auto;
 }
+a{
+	text-decoration: none;
+}

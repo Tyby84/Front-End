@@ -34,6 +34,11 @@
 			height: 10px;
 			border-radius: 50%;
 			background-color: $main;
+			
+			&:hover {
+				animation-name: liftUp;
+				animanima
+			}
 		}
 	}
 	
@@ -62,4 +67,9 @@
 	}
 	
 	
+}
+@keyframes liftUp{
+	100% {
+		margin-bottom: 10px;
+	}
 }

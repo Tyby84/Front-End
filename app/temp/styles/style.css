@@ -359,6 +359,10 @@ body{
 	margin: 0 auto;
 }
 
+a{
+	text-decoration: none;
+}
+
 .hero {
 	position: relative;
 	height: auto;
@@ -368,13 +372,18 @@ body{
 .hero__img {
 		width: 750px;
 		height: 500px;
+		
 	}
 
 .hero__arrow {
-		display: inline-block;
+			display: inline-block;
 			font-size: 49px;
-			
 			color: #fff;
+			
+		/*&__img:hover {
+			cursor: pointer;
+			color: $main;
+		}*/
 	}
 
 .hero__navigation{
@@ -383,13 +392,20 @@ body{
 		left: 20px;
 		display: flex;
 		flex-direction: row;
+		
 	}
+
+.hero__navigation:hover .hero__navigation__back{
+			margin-left: -3px;
+			
+		}
 
 .hero__navigation__back {
 			font-size: 33px;
 			color: rgb(255,255,255);
-			margin-top: 5px;
+			margin-top: 6px;
 			margin-left: 3px;
+			transition: all .6s ease-out;
 			}
 
 .panel {
