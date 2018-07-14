@@ -21,24 +21,28 @@
 	&__title {
 		font-size: 89px;
 		color: rgb(23,5,198);
-		font-family: "Source Sans Pro";
 		font-weight: 800;
 		margin: 0;
 		}
 	&__more{
 		display: flex;
 		flex-direction: row;
+		padding: 10px;
+		cursor: pointer;
+		&:hover .panel__more__circle{
+			
+			margin-right: 3px;
+			opacity: .5;
+		}
 		&__circle {
 			margin-left: 3px;
+			margin-bottom: 0px;
 			width: 10px;
 			height: 10px;
 			border-radius: 50%;
 			background-color: $main;
+			transition: all .4s ease-out;
 			
-			&:hover {
-				animation-name: liftUp;
-				animanima
-			}
 		}
 	}
 	
@@ -54,7 +58,14 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
+			padding: 8px;
+			cursor: pointer;
 			transform: translate(-50%,-50%);
+			transition: all .4s ease-out;
+			
+			&:hover {
+				transform: translate(-50%,-50%) scale(1.2);
+			}
 		}
 		
 		&__text {
@@ -67,9 +78,4 @@
 	}
 	
 	
-}
-@keyframes liftUp{
-	100% {
-		margin-bottom: 10px;
-	}
 }

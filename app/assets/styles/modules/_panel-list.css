@@ -16,9 +16,16 @@
 			border-bottom: 2px solid $main;
 			padding-bottom: 40px;
 			padding-top: 40px;
+			cursor: pointer;
+			&:hover .panel-list__items__item__name{
+				letter-spacing: 1px;
+				opacity: .7;
+			}
+			
 			&__name {
 				font-size: 55px;
 				margin: 0;
+				transition: .5s all ease-out;
 			}
 			&__arrow {
 				font-size: 49px;

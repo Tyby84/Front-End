@@ -434,7 +434,6 @@ a{
 .panel__title {
 		font-size: 89px;
 		color: rgb(23,5,198);
-		font-family: "Source Sans Pro";
 		font-weight: 800;
 		margin: 0;
 		}
@@ -442,14 +441,25 @@ a{
 .panel__more{
 		display: flex;
 		flex-direction: row;
+		padding: 10px;
+		cursor: pointer;
 	}
+
+.panel__more:hover .panel__more__circle{
+			
+			margin-right: 3px;
+			opacity: .5;
+		}
 
 .panel__more__circle {
 			margin-left: 3px;
+			margin-bottom: 0px;
 			width: 10px;
 			height: 10px;
 			border-radius: 50%;
 			background-color: rgb(23,5,198);
+			transition: all .4s ease-out;
+			
 		}
 
 .panel__follow {
@@ -466,9 +476,17 @@ a{
 			position: absolute;
 			top: 50%;
 			left: 50%;
+			padding: 8px;
+			cursor: pointer;
 			-webkit-transform: translate(-50%,-50%);
 			        transform: translate(-50%,-50%);
+			transition: all .4s ease-out;
 		}
+
+.panel__follow .fas.fa-plus:hover {
+				-webkit-transform: translate(-50%,-50%) scale(1.2);
+				        transform: translate(-50%,-50%) scale(1.2);
+			}
 
 .panel__follow__text {
 			font-size: 26px;
@@ -527,11 +545,18 @@ a{
 			border-bottom: 2px solid rgb(23,5,198);
 			padding-bottom: 40px;
 			padding-top: 40px;
+			cursor: pointer;
 		}
+
+.panel-list__items__item:hover .panel-list__items__item__name{
+				letter-spacing: 1px;
+				opacity: .7;
+			}
 
 .panel-list__items__item__name {
 				font-size: 55px;
 				margin: 0;
+				transition: .5s all ease-out;
 			}
 
 .panel-list__items__item__arrow {

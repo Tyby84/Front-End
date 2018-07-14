@@ -46,9 +46,9 @@ gulp.task('cssInject', ['styles'], function() {
 	return gulp.src('./app/temp/styles/style.css')
 	  .pipe(browserSync.stream());
   });
-gulp.task('scriptsRefresh', ['scripts'], function() {
+/*gulp.task('scriptsRefresh', ['scripts'], function() {
 	browserSync.reload();
-});
+});*/
 
 gulp.task('scripts', function(callback) {
 	webpack(require('../../webpack.config.js'), function(err, stats) {
