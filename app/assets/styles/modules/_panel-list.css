@@ -1,0 +1,30 @@
+.panel-list {
+	font-size: 29px;
+	color: $main;
+	font-weight: 800;
+	
+	&__items {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		
+		&__item {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			color: $main;
+			border-bottom: 2px solid $main;
+			padding-bottom: 40px;
+			padding-top: 40px;
+			&__name {
+				font-size: 55px;
+				margin: 0;
+			}
+			&__arrow {
+				font-size: 49px;
+				
+			}
+		}
+	}
+	
+}
