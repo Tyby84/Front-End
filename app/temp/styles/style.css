@@ -353,16 +353,20 @@ img {
 }
 
 body{
+	background: #222;
 	width: 750px;
 	margin: 0 auto;
 }
 
 .hero {
 	position: relative;
+	height: auto;
+	z-index: 1;
 }
 
 .hero__img {
 		width: 750px;
+		height: 500px;
 	}
 
 .hero__arrow {
@@ -384,5 +388,17 @@ body{
 			font-size: 33px;
 			color: rgb(255,255,255);
 			font-family: "Source Sans Pro";
-			
+			margin-top: 8px;
+			margin-left: 3px;
 			}
+
+.panel {
+	position: absolute;
+	width: 750px;
+	height: 900px;
+	border-radius: 35px;
+	box-shadow: 0px -10px 60px rgba(1,1,2,0.2);
+	background-color: #ffffff;
+	margin-top: -60px;
+	z-index: 2;
+}
