@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+img {
+	
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 750px;
+	margin: 0 auto;
+}

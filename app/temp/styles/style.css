@@ -340,3 +340,49 @@ template {
 [hidden] {
   display: none;
 }
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 750px;
+	margin: 0 auto;
+}
+
+.hero {
+	position: relative;
+}
+
+.hero__img {
+		width: 750px;
+	}
+
+.hero__arrow {
+		display: inline-block;
+			font-size: 49px;
+			
+			color: #fff;
+	}
+
+.hero__navigation{
+		position: absolute;
+		top: 80px;
+		left: 20px;
+		display: flex;
+		flex-direction: row;
+	}
+
+.hero__navigation__back {
+			font-size: 33px;
+			color: rgb(255,255,255);
+			font-family: "Source Sans Pro";
+			
+			}

@@ -6,6 +6,7 @@ let gulp = require('gulp'),
 	cssImport = require('postcss-import'),
 	mixins = require('postcss-mixins'),
 	hexrgba = require('postcss-hexrgba'),
+	postcssExtend = require('postcss-extend-rule'),
 	watch = require('gulp-watch'),
 	browserSync = require('browser-sync').create(),
 	webpack = require('webpack');
@@ -34,7 +35,7 @@ let gulp = require('gulp'),
 
 gulp.task('styles', function() {
   return gulp.src('./app/assets/styles/style.css')
-    	.pipe(postcss([cssImport, mixins, cssvars, nested, hexrgba ,autoprefixer]))
+    	.pipe(postcss([cssImport, mixins, cssvars, nested, hexrgba,postcssExtend,autoprefixer]))
   		.on('error', function(errorInfo) {
 	  	console.log(errorInfo.toString());
   		this.emit('end');

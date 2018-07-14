@@ -1,0 +1,26 @@
+.hero {
+	position: relative;
+	&__img {
+		width: 750px;
+	}
+	&__arrow {
+		display: inline-block;
+			font-size: 49px;
+			
+			color: #fff;
+	}
+	&__navigation{
+		position: absolute;
+		top: 80px;
+		left: 20px;
+		display: flex;
+		flex-direction: row;
+		&__back {
+			font-size: 33px;
+			color: rgb(255,255,255);
+			font-family: "Source Sans Pro";
+			
+			}
+	}
+}
+
