@@ -44,7 +44,7 @@
 		border: 4px solid $main;
 		border-radius: 50%;
 		color: $main;
-		
+		margin-top: 10px;
 		.fas.fa-plus{
 			position: absolute;
 			top: 50%;
@@ -61,4 +61,6 @@
 			margin-left: 50px;
 		}
 	}
+	
+	
 }

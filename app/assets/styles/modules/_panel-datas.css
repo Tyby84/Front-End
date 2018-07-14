@@ -1,0 +1,27 @@
+.panel-datas {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
+	color: $main;
+	font-family: "Source Sans Pro";
+	font-weight: 800;
+	border-top: 2px solid $main;
+	border-bottom: 2px solid $main;
+	margin-top: 40px;
+	padding: 1rem;
+	
+	&__item {
+		text-align: center;
+		
+		&__count {
+			font-size: 47px;
+			margin: 0;
+		}
+		&__name {
+			margin: 0;
+			font-size: 26px;
+		}
+	}
+	
+	
+}

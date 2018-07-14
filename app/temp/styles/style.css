@@ -402,6 +402,8 @@ body{
 	background-color: #ffffff;
 	margin-top: -60px;
 	z-index: 2;
+	
+	
 }
 
 .panel__container{
@@ -442,6 +444,7 @@ body{
 		border: 4px solid rgb(23,5,198);
 		border-radius: 50%;
 		color: rgb(23,5,198);
+		margin-top: 10px;
 	}
 
 .panel__follow .fas.fa-plus{
@@ -460,3 +463,33 @@ body{
 			display: inline-block;
 			margin-left: 50px;
 		}
+
+.panel-datas {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
+	color: rgb(23,5,198);
+	font-family: "Source Sans Pro";
+	font-weight: 800;
+	border-top: 2px solid rgb(23,5,198);
+	border-bottom: 2px solid rgb(23,5,198);
+	margin-top: 40px;
+	padding: 1rem;
+	
+	
+}
+
+.panel-datas__item {
+		text-align: center;
+	}
+
+.panel-datas__item__count {
+			font-size: 47px;
+			margin: 0;
+		}
+
+.panel-datas__item__name {
+			margin: 0;
+			font-size: 26px;
+		}
+
