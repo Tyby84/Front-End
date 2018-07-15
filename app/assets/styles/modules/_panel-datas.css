@@ -7,14 +7,15 @@
 	border-top: 2px solid $main;
 	border-bottom: 2px solid $main;
 	margin-top: 40px;
-	padding: 1rem;
+	padding: 20px 28px;
 	
 	&__item {
 		text-align: center;
 		
 		&__count {
 			font-size: 47px;
-			margin: 0;
+			margin: 0 0 -8px 0;
+			
 		}
 		&__name {
 			margin: 0;

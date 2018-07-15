@@ -20,8 +20,8 @@
 	
 	&__navigation{
 		position: absolute;
-		top: 80px;
-		left: 20px;
+		top: 75px;
+		left: 17px;
 		display: flex;
 		flex-direction: row;
 		
@@ -34,7 +34,7 @@
 			font-size: 33px;
 			color: rgb(255,255,255);
 			margin-top: 6px;
-			margin-left: 3px;
+			margin-left: 5px;
 			transition: all .6s ease-out;
 			}
 		

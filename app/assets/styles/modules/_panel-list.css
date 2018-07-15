@@ -3,6 +3,11 @@
 	color: $main;
 	font-weight: 800;
 	
+	&__title {
+		margin-top: 42px;
+		margin-bottom: 6px;
+	}
+	
 	&__items {
 		display: flex;
 		flex-direction: column;
@@ -14,8 +19,8 @@
 			align-items: center;
 			color: $main;
 			border-bottom: 2px solid $main;
-			padding-bottom: 40px;
-			padding-top: 40px;
+			padding-top: 45px;
+			padding-bottom: 38px;
 			cursor: pointer;
 			&:hover .panel-list__items__item__name{
 				letter-spacing: 1px;
@@ -29,6 +34,7 @@
 			}
 			&__arrow {
 				font-size: 49px;
+				padding-right: 15px;
 				
 			}
 		}
