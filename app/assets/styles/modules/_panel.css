@@ -27,7 +27,7 @@
 	&__more{
 		display: flex;
 		flex-direction: row;
-		padding: 10px;
+		padding: 5px;
 		cursor: pointer;
 		&:hover .panel__more__circle{
 			
