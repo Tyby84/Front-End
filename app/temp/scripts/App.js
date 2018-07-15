@@ -10449,9 +10449,14 @@ var _Menu = __webpack_require__(2);
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
+var _Follow = __webpack_require__(3);
+
+var _Follow2 = _interopRequireDefault(_Follow);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var navigation = new _Menu2.default();
+new _Follow2.default();
 
 /***/ }),
 /* 2 */
@@ -10506,6 +10511,66 @@ var Nav = function () {
 }();
 
 exports.default = Nav;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Follow = function () {
+	function Follow() {
+		_classCallCheck(this, Follow);
+
+		this.followButton = (0, _jquery2.default)('.panel').find('#plus');
+		this.follow = (0, _jquery2.default)('.panel').find('.panel__follow__text');
+		this.circle = (0, _jquery2.default)('.panel').find('.panel__follow');
+		this.isFollowed = false;
+		this.events();
+	}
+
+	_createClass(Follow, [{
+		key: 'events',
+		value: function events() {
+			this.followButton.click(this.toggleFollow.bind(this));
+			this.follow.click(this.toggleFollow.bind(this));
+		}
+	}, {
+		key: 'toggleFollow',
+		value: function toggleFollow() {
+			if (!this.isFollowed) {
+				this.follow.text('Unfollow').addClass('panel__follow__text--unfollow');
+				this.followButton.removeClass('fa-plus').addClass('fa-minus');
+				this.circle.css('borderColor', ' #e60b0b');
+				this.isFollowed = true;
+			} else {
+				this.follow.text('Follow').removeClass('panel__follow__text--unfollow');
+				this.followButton.removeClass('fa-minus').addClass('fa-plus');
+				this.circle.css('borderColor', '#1705c6');
+				this.isFollowed = false;
+			}
+		}
+	}]);
+
+	return Follow;
+}();
+
+exports.default = Follow;
 
 /***/ })
 /******/ ]);

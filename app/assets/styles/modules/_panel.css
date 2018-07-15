@@ -41,7 +41,7 @@
 			height: 10px;
 			border-radius: 50%;
 			background-color: $main;
-			transition: all .4s ease-out;
+			
 			
 		}
 	}
@@ -54,19 +54,14 @@
 		border-radius: 50%;
 		color: $main;
 		margin-top: 10px;
-		.fas.fa-plus{
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			padding: 8px;
-			cursor: pointer;
-			transform: translate(-50%,-50%);
-			transition: all .4s ease-out;
+		.fas.fa-plus, .fas.fa-minus{
+			@extend %fa-icon;
 			
 			&:hover {
 				transform: translate(-50%,-50%) scale(1.2);
 			}
 		}
+		.fas.fa-minus{color: #e60b0b;}
 		
 		&__text {
 			font-size: 26px;
@@ -74,6 +69,11 @@
 			font-weight: 800;
 			display: inline-block;
 			margin-left: 50px;
+			cursor: pointer;
+			
+			&--unfollow {
+				color: #d80b0b;
+			}
 		}
 	}
 	

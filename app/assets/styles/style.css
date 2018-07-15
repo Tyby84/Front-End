@@ -1,6 +1,7 @@
 @import 'normalize.css';
 @import './modules/_global';
 @import './modules/_variables';
+@import './modules/_extends';
 @import './modules/_hero';
 @import './modules/_panel';
 @import './modules/_panel-datas';
