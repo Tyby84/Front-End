@@ -61,7 +61,7 @@
 			@extend %fa-icon;
 			
 			&:hover {
-				transform: translate(-50%,-50%) scale(1.2);
+				transform: translate(-50%,-50%);
 			}
 		}
 		.fas.fa-minus{color: $alert;}

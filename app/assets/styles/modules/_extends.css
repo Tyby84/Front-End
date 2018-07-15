@@ -1,3 +1,7 @@
+/* Creating extends for the plus - minus icons
+   You can find it in the _panel.css file under &__follow selector
+*/
+
 %fa-icon {
 	position: absolute;
 	top: 50%;

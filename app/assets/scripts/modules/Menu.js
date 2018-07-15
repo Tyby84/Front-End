@@ -1,3 +1,5 @@
+// The following code is responsible opening and closing the menu under the more icon.
+
 import $ from 'jquery';
 
 class Nav {

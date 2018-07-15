@@ -1,3 +1,6 @@
+//The following code is for the Follow - Unfollow logic.
+//When the user click on the plus icon or Follow text it changes to 'Unfollow' and they also will get a red color.
+
 import $ from 'jquery';
 
 class Follow {

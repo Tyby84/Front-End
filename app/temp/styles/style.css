@@ -363,6 +363,14 @@ a{
 	text-decoration: none;
 }
 
+/*
+	$main variable is the color code from the given design, $alert is created by me for closing button and for unfollow button and minus icon
+*/
+
+/* Creating extends for the plus - minus icons
+   You can find it in the _panel.css file under &__follow selector
+*/
+
 .hero {
 	position: relative;
 	height: auto;
@@ -379,11 +387,7 @@ a{
 			display: inline-block;
 			font-size: 49px;
 			color: #fff;
-			
-		/*&__img:hover {
-			cursor: pointer;
-			color: $main;
-		}*/
+		
 	}
 
 .hero__navigation{
@@ -489,8 +493,8 @@ a{
 }
 
 .panel__follow .fas.fa-plus:hover, .panel__follow .fas.fa-minus:hover {
-				-webkit-transform: translate(-50%,-50%) scale(1.2);
-				        transform: translate(-50%,-50%) scale(1.2);
+				-webkit-transform: translate(-50%,-50%);
+				        transform: translate(-50%,-50%);
 			}
 
 .panel__follow .fas.fa-minus{color: #d80b0b;}
