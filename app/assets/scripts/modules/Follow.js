@@ -19,7 +19,7 @@ class Follow {
 			this.follow.text('Unfollow')
 			.addClass('panel__follow__text--unfollow');
 			this.followButton.removeClass('fa-plus').addClass('fa-minus');
-			this.circle.css('borderColor',' #e60b0b');
+			this.circle.css('borderColor','#d80b0b');
 			this.isFollowed = true;
 		} else {
 			this.follow.text('Follow')

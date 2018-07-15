@@ -41,7 +41,7 @@
 			height: 10px;
 			border-radius: 50%;
 			background-color: $main;
-			
+			transition: all .4s ease-out;
 			
 		}
 	}
@@ -61,7 +61,7 @@
 				transform: translate(-50%,-50%) scale(1.2);
 			}
 		}
-		.fas.fa-minus{color: #e60b0b;}
+		.fas.fa-minus{color: $alert;}
 		
 		&__text {
 			font-size: 26px;
@@ -72,7 +72,7 @@
 			cursor: pointer;
 			
 			&--unfollow {
-				color: #d80b0b;
+				color: $alert;
 			}
 		}
 	}

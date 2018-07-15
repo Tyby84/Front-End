@@ -457,8 +457,8 @@ a{
 			width: 10px;
 			height: 10px;
 			border-radius: 50%;
-			background-color: rgb(23,5,198);
-			
+			background-color: #1705c6;
+			transition: all .4s ease-out;
 			
 		}
 
@@ -466,9 +466,9 @@ a{
 		position: relative;
 		width: 37px;
 		height: 37px;
-		border: 4px solid rgb(23,5,198);
+		border: 4px solid #1705c6;
 		border-radius: 50%;
-		color: rgb(23,5,198);
+		color: #1705c6;
 		margin-top: 10px;
 	}
 
@@ -480,6 +480,9 @@ a{
   cursor: pointer;
   -webkit-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
+  transition: -webkit-transform .4s ease-out;
+  transition: transform .4s ease-out;
+  transition: transform .4s ease-out, -webkit-transform .4s ease-out;
 }
 
 .panel__follow .fas.fa-plus:hover, .panel__follow .fas.fa-minus:hover {
@@ -487,11 +490,11 @@ a{
 				        transform: translate(-50%,-50%) scale(1.2);
 			}
 
-.panel__follow .fas.fa-minus{color: #e60b0b;}
+.panel__follow .fas.fa-minus{color: #d80b0b;}
 
 .panel__follow__text {
 			font-size: 26px;
-			color: rgb(23,5,198);
+			color: #1705c6;
 			font-weight: 800;
 			display: inline-block;
 			margin-left: 50px;
@@ -506,10 +509,10 @@ a{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;	
-	color: rgb(23,5,198);
+	color: #1705c6;
 	font-weight: 800;
-	border-top: 2px solid rgb(23,5,198);
-	border-bottom: 2px solid rgb(23,5,198);
+	border-top: 2px solid #1705c6;
+	border-bottom: 2px solid #1705c6;
 	margin-top: 40px;
 	padding: 1rem;
 	
@@ -534,7 +537,7 @@ a{
 
 .panel-list {
 	font-size: 29px;
-	color: rgb(23,5,198);
+	color: #1705c6;
 	font-weight: 800;
 	
 }
@@ -549,8 +552,8 @@ a{
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			color: rgb(23,5,198);
-			border-bottom: 2px solid rgb(23,5,198);
+			color: #1705c6;
+			border-bottom: 2px solid #1705c6;
 			padding-bottom: 40px;
 			padding-top: 40px;
 			cursor: pointer;
@@ -601,7 +604,7 @@ a{
 			right: 15px;
 			padding: 3px;
 			font-size: 20px;
-			color: #c11f1f;
+			color: #d80b0b;
 			cursor: pointer;
 			transition: all .6s ease-out;
 		}
